@@ -1,0 +1,130 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(920px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: clamp(1.4rem, 1.8vw, 2rem);
+}
+
+.subtitle {
+  margin: 0;
+  color: #475569;
+}
+
+.controls {
+  margin: 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+}
+
+.imperial-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 6px;
+}
+
+input {
+  width: 160px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+button {
+  background: #0f172a;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.viz-window {
+  height: 460px;
+  overflow: auto;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
+  border: 1px solid #bfdbfe;
+  padding: 14px;
+}
+
+.viz-scene {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 56px;
+  transition: height 350ms ease;
+}
+
+.bar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.bar {
+  width: 56px;
+  border-radius: 12px 12px 4px 4px;
+  transition: height 400ms ease;
+}
+
+.bar.person {
+  background: linear-gradient(180deg, #22c55e, #15803d);
+  width: 34px;
+}
+
+.bar.tower {
+  background: linear-gradient(180deg, #64748b, #334155);
+}
+
+.bar-wrap p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.note {
+  margin: 14px 0 0;
+  color: #334155;
+}
